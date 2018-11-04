@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+    color: white;
+}
+/***************defalt color************/
+.bg-pink {
+    background: pink;
+}
+.bg-white {
+    background: white;
+}
+.bg-black {
+    background: black;
+}
+.bg-red {
+    background: red;
+}
+.bg-green {
+    background: green;
+}
+.bg-blue {
+    background: blue;
+}
+.bg-orange {
+    background: orange;
+}
+/***************defalt width************/
+.w-25 {
+    width: 25%;
+}
+.w-50 {
+    width: 50%;
+}
+.w-80 {
+    width: 80%;
+}
+
+/***************defalt height************/
+.h-50 {
+    height: 50px;
+}
+.h-100 {
+    height: 100px;
+}
+.h-150 {
+    height: 150px;
+}
+.h-200 {
+    height: 200px;
+}
+.h-250 {
+    height: 250px;
+}
+.h-300 {
+    height: 300px;
+}
+.h-450 {
+    height: 450px;
+}
+/***************flexbox************/
+.flex {
+    display: flex;
+}
+.jc-xc {
+    justify-content: center;
+}
+.ai-yc {
+    align-items: center;
+}
+.ai-yb {
+    align-items: flex-end;
+}
+.as-yc-child {
+    align-self: center;
+}
+.f-w {
+    flex-wrap: wrap;
+}
+/**************main*****************/
+article,
+aside,
+article {
+    flex-grow: 1;   /*властивість дозволяє рости і займати цілу ширину екрану */
+                    /**взалежності від співвідношення якщо всі блоки мають 1 ширину = буде рівна */
+                    /*якщо один з них має = 2 то він буде в двічі більший за інші **/
+    flex-basis: 33.3%                
+}
+/**************left block****************/
+.left-block {  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 370px;
+}
+
+.l-block-one {    
+    width: 80%;
+}
+.l-block-second {
+    width: 80%;
+}
+.wrapper-sub-left {
+    display: flex;
+}
+.wrapper-sub-left div {
+    flex: 1 0 auto;
+}
+/**************center block****************/
+
+aside {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+aside>div {
+    flex: 1 0;
+}
+aside p {
+    align-self: flex-start;
+    flex: 1 0 100%;
+}
+.a-center-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.a-center-box>div {
+    flex: 1 0 auto;
+}
+
+./*/*/*/*box-center {
+    display: flex;    
+    flex-direction: column;/*поміняли напрямок осі*/
+    /*align-items: stretch;/*заповнює висоту*/*/
+/*}
+.box-center p {
+    flex-grow: 1;
+}
+.a-center {
+    flex-grow: 1;
+}
+.a-center-box {*/*/*/*/*/
+    /*display: flex;*/
+    /*align-items: center; */
+}
+/*.a-center-block {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}*/
+/*.a-center-block p {
+    flex-grow: 1;
+}*/
